@@ -1,0 +1,48 @@
+.button_block
+	text-align: center
+	margin: 120px 0;
+
+	button
+		position: relative
+		z-index: 2
+		background: #557E83
+		color: #fff
+		border: 0
+		box-shadow: none
+		padding: 10px 15px
+		border-radius: 50px
+		text-transform: uppercase
+		width: 220px
+		cursor: pointer
+		transition: .5s
+
+		&:hover
+			background: #65746E
+			transition: .5s
+
+	&:before
+		position: absolute
+		z-index: 0
+		left: 0
+		content: ''	
+		height: 2px
+		width: 100%
+		background-image: linear-gradient(90deg, #557E83, #557E83 50%, transparent 50%, transparent 100%)
+		background-size: 15px 2px
+		margin-top: 22px
+
+	&:after
+		position: absolute
+		z-index: 0
+		content: ''
+		display: inline-block
+		width: 180px
+		height: 180px
+		border-radius: 90px
+		border: 2px dashed #557E83
+		margin-top: -75px
+		margin-left: -200px
+		animation: spin 24s infinite linear
+		@keyframes spin
+			100%
+				transform: rotate(360deg)

@@ -1,4 +1,153 @@
-body
-    background: #fff
-    font-size: 16px
+$break-small: 764px
 
+@import "src/sass/fonts.sass"
+@import "src/sass/menu.sass"
+@import "src/sass/button.sass"
+@import "src/sass/events.sass"
+@import "src/sass/video.sass"
+
+html
+	background: #fefefe
+	background-image: url('/img/fon0.png')
+	background-size: cover
+	background-position: top left
+
+body
+	font-family: 'Fira Sans'
+	font-size: 16px
+	color: #65746E
+	background-image: url('/img/line-fon.svg'), url('/img/fon1.png')
+	background-size: cover, auto
+	background-attachment: fixed
+	overflow-x: hidden
+
+a
+	color: #65746E
+
+blockquote
+	font-family: 'Rozoviy Chulok'
+
+/*Hedaer*/
+#top_block 
+	text-align: center
+	text-transform: uppercase
+	color: #4D5E58
+	background: url('/img/fonbl1.png')
+	background-size: auto
+	background-repeat: no-repeat
+	background-position: center center
+	min-height: 600px
+	padding: 1% 2%
+
+	@media screen and (max-width: $break-small)
+		background-size: cover
+		min-height: 280px
+
+.social_top 
+	a
+		display: inline-block
+		padding: 5px
+
+		svg
+			width: 30px
+			height: 30px
+
+#facebook-dark, #instagram-dark, #vkontakte-dark, #youtube-dark
+	.vector
+		fill: #fff
+	.path
+		fill: #65746E
+		&:hover
+			fill: #95493C
+
+.like_top
+	text-align: right
+	padding: 5px
+	text-transform: uppercase
+
+	@media screen and (max-width: $break-small)
+		display: none
+
+.logo_top
+	width: 90%
+	max-width: 360px
+	display: inline-block
+
+#top_block h3
+	font-size: 20px
+	font-weight: 400
+	margin: 0
+
+#top_block h1
+	font-size: 64px
+	margin: 5px 0
+
+/*Library*/
+#library_section h3
+	font-family: 'Rozoviy Chulok'
+	color: #95493C
+	font-size: 3.4em
+	font-weight: 600
+
+/*Footer*/
+footer 
+	background: url(/img/footer-fon.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	color: #fff
+	padding: 30px 15px
+
+footer a
+	display: inline-block
+	color: #fff
+
+footer blockquote 
+	font-size: 2.6em
+	line-height: 1.2em
+	margin: 0
+
+.social_footer
+	margin: 20px 0
+
+	a
+		display: inline-block
+		padding: 5px
+		vertical-align: middle
+
+		svg
+			width: 30px
+			height: 30px
+
+	span
+		display: inline-block
+		vertical-align: middle
+		height: 30px
+		padding-right: 30px
+
+#facebook-light, #instagram-light, #vkontakte-light, #youtube-light
+	.vector
+		fill: #00455d
+
+	.path
+		fill: #fff
+		&:hover
+			fill: #95493C
+
+#donate
+	position: fixed
+	z-index: 5
+	transform: rotate(270deg)
+	right: 0
+	top: 30%
+	margin-right: -55px
+	background: #557E83
+	color: #fff
+	padding: 10px 15px
+	text-transform: uppercase
+	text-decoration: none
+	transition: .5s
+
+	&:hover
+		background: #65746E
+		transition: .5s

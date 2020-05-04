@@ -1,0 +1,43 @@
+#video_section
+	position: relative
+
+	.last_video
+		position: relative
+		z-index: 1
+
+		&:after
+			position: absolute
+			content: ''
+			top: 0
+			left: 0
+			z-index: 2
+			display: block
+			width: 100%
+			height: 100%
+			background: rgba(71, 81, 99, 0.72)
+
+	.video_file
+		width: 100%
+
+	.play_video_button
+		position: absolute
+		z-index: 3
+		top: 35%
+		width: 90px
+		max-width: 25%
+		left: calc(50% - 45px)
+		transition: transform .5s
+		cursor: pointer
+
+		&:hover
+			transform: scale(1.2)
+
+	h3 
+		position: absolute
+		z-index: 3
+		top: 60%
+		text-align: center
+		width: 100%
+		color: #fff
+		text-transform: uppercase
+		font-size: 2.6em

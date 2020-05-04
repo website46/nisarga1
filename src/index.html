@@ -1,55 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Нисарга</title>
-    <meta name="description" content="Описание страницы">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/libs/modern-css-reset/reset.min.css">
+	<link rel="stylesheet" href="/libs/skeleton/skeleton.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Нисарга</title>
+	<meta name="description" content="Описание страницы">
 </head>
 <body>
-    
-<header>
-    <div>
-        Мне нравится Нисарга
-    </div>
-    <img src="" alt="Логотип">
-    <h3>Центр самопознания</h3>
-    <h1>Нисарга</h1>
+
+<header class="container">
+	<div class="one-half column social_top">
+		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+			<svg><use xlink:href="/img/social-dark.svg#facebook-dark"></use></svg>
+		</a>
+		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+			<svg><use xlink:href="/img/social-dark.svg#instagram-dark"></use></svg>
+		</a>
+		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+			<svg><use xlink:href="/img/social-dark.svg#vkontakte-dark"></use></svg>
+		</a>
+		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+			<svg><use xlink:href="/img/social-dark.svg#youtube-dark"></use></svg>
+		</a>
+	</div>
+	<div class="one-half column like_top">Мне нравится Нисарга</div>
 </header>
-<nav>
-    <ul>
-        <li>Мероприятия</li>
-        <li>Видео</li>
-        <li>О центре</li>
-        <li>Отзывы</li>
-        <li>Контакты</li>
-</ul>
+
+<div id="top_block">
+	<img src="img/logo.svg" class="logo_top" alt="Логотип">
+	<h3>Центр самопознания</h3>
+	<h1>Нисарга</h1>
+</div>
+
+<nav id="top_menu" class="menu">
+	<label for="navbar-checkbox" class="navbar-handle">Меню</label>
+	<input type="checkbox" id="navbar-checkbox"/>
+	<ul>
+		<li><a href="#">Мероприятия</a></li>
+		<li><a href="#">Видео</a></li>
+		<li><a href="#">О центре</a></li>
+		<li><a href="#">Отзывы</a></li>
+		<li><a href="#">Контакты</a></li>
+	</ul>
 </nav>
 
-<section>
-    <article>
+<main class="container">
+ 	<section id="events_section">
 
-    </article>
-    <article>
-        <button>Смотреть все видео</button>
-    </article>
-</section>
+		<article class="row">
+			<div class="one-half column events_img">
+				<div>
+					<img src="/img/events/m1-img0.png" alt="Зеркало подсознания">
+				</div>
+				<span>Ранняя регистрация со скидкой</span>
+			</div>
+			<div class="one-half column events_info">
+				<h3>Зеркало подсознания</h3>
+				<span>29 февраля 2020</span>
+				<span class="events_city">Ярославль</span>
+				<a href="#">Подробнее</a>
+				<a href="#">Заполнить анкету</a>
+				<div class="events_imgs_block">
+					<div class="events_imgs"><img src="/img/events/m1-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m1-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m1-img3.png" alt=""></div>
+				</div>	
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column events_img">
+				<div>
+					<img src="/img/events/m2-img0.png" alt="География меня">
+				</div>
+				<span>Набор закрыт</span>
+			</div>
+			<div class="one-half column events_info">
+				<h3>География меня</h3>
+				<span>15 февраля 2020</span>
+				<span class="events_city">Киев</span>
+				<a href="#">Подробнее</a>
+				<a href="#">Заполнить анкету</a>
+				<div class="events_imgs_block">
+					<div class="events_imgs"><img src="/img/events/m2-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m2-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m2-img3.png" alt=""></div>
+				</div>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column events_img">
+				<div>
+					<img src="/img/events/m3-img0.png" alt="Атма Вичара">
+				</div>
+				<span>Ранняя регистрация со скидкой</span>
+			</div>
+			<div class="one-half column events_info">
+				<h3>Атма Вичара</h3>
+				<span>01-07 мая 2020</span>
+				<span class="events_city">Ярославль</span>
+				<a href="#">Подробнее</a>
+				<a href="#">Заполнить анкету</a>
+				<div class="events_imgs_block">
+					<div class="events_imgs"><img src="/img/events/m3-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m3-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m3-img3.png" alt=""></div>
+				</div>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column events_img">
+				<div>
+					<img src="/img/events/m4-img0.png" alt="Сатсанг">
+				</div>				
+				<span>Вход свободный</span>
+			</div>
+			<div class="one-half column events_info">
+				<h3>Сатсанг</h3>
+				<span>08 мая 2020</span>
+				<span class="events_city">Москва</span>
+				<a href="#">Подробнее</a>
+				<a href="#">Заполнить анкету</a>
+				<div class="events_imgs_block">
+					<div class="events_imgs"><img src="/img/events/m4-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m4-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="/img/events/m4-img3.png" alt=""></div>
+				</div>
+			</div>
+		</article>
+
+		<div class="button_block">
+			<button>Посмотреть все</button>
+		</div>
+
+	</section>
+
+	<section id="video_section">
+		<div class="last_video">
+			<img src="/img/video.png" class="video_file" alt="Видео">
+			<h3>МАГИЧЕСКИЙ ответ<br>на ваш вопрос </h3>
+			<img src="/img/play_video.svg" class="play_video_button" alt="">
+		</div>
+
+		<div class="button_block">
+			<button>Смотреть все видео</button>
+		</div>
+	</section>
+
+	<section id="library_section">
+		<h3>Изучайте нашу библиотеку</h3>
+		<p>Подборка из авторов и их произведений, фильмов, картин и других материалов от Юрия Менячихина и регулярные новости о наших мероприятиях </p>
+		<form>
+			<input type="text" required="" placeholder="Имя">
+			<input type="email" required="" placeholder="E-mail"><br>
+			<input type="text" required="" placeholder="Выберите страну">
+			<input type="text" required="" placeholder="Выберите город">
+		</form>
+		<div class="button_block">
+			<button>Получить на почту</button>
+		</div>
+	</section>
+
+</main>
 
 <footer>
-    <a id="donation" href="#">Поблагодарить</a>
-    <div>
-        <img src="" alt="Логотип">
-        <blockquote>Рельному ничто не угрожает. Нерального не существует</blockquote>
-        <p>Введение в Курс чудес</p>
-        <a href="#">Подписаться на новости</a>
-        <a href="#">Предложить мероприятие в вашем городе</a>
-    </div>
-    <div>
-        <a href="#">Политика Конфиденциальности</a>
-        <p>Разработано в <a href="#">МГ Свежак</a></p>
-    </div>
+	<div class="container">   
+		<div class="one-half column">
+			<blockquote>Рельному ничто не угрожает. Нерального не существует</blockquote>
+			<p>Введение в Курс чудес</p>
+			<div class="social_footer">
+				<span>Будьте с нами</span>
+				<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+					<svg><use xlink:href="/img/social-light.svg#facebook-light"></use></svg>
+				</a>
+				<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+					<svg><use xlink:href="/img/social-light.svg#instagram-light"></use></svg>
+				</a>
+				<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+					<svg><use xlink:href="/img/social-light.svg#vkontakte-light"></use></svg>
+				</a>
+				<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+					<svg><use xlink:href="/img/social-light.svg#youtube-light"></use></svg>
+				</a>
+			</div>
+			<a href="#">Подписаться на новости</a>
+			<a href="#">Предложить мероприятие в вашем городе</a>
+		</div>
+		<div class="one-half column">
+			<img src="/img/logo-w.svg" alt="Логотип">
+			<a href="#">Политика Конфиденциальности</a>
+			<p>Разработано в <a href="#">МГ Свежак</a></p>
+		</div>
+	</div>
+	<a id="donate" href="#">Поблагодарить</a>
 </footer>
+
+<script src="/js/common.js"></script>
 
 </body>
 </html>

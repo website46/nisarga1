@@ -1,0 +1,63 @@
+$break-small: 764px
+
+#top_menu 
+	position: sticky
+	z-index: 3
+	top: 0
+	margin: 0
+	padding: 0
+	width: 100%
+
+	@media screen and (max-width: $break-small)
+		position: fixed
+		background: #fff
+
+#top_menu li
+	text-transform: uppercase
+	color: #4D5E58
+	margin: 0
+
+.navbar-handle
+	line-height: 40px
+	width: 50px
+	height: 40px
+	margin: 3px
+	position: fixed
+	display: inline-block
+	cursor: pointer
+	right: 0
+
+	@media screen and (min-width: $break-small)
+		display: none
+			
+.menu ul
+	display: none
+	width: 100%
+
+	@media screen and (min-width: $break-small)
+		display: block
+		overflow: auto
+		text-align: center
+		margin: 0
+
+	
+.menu > input[type='checkbox']	
+	display: none
+
+.menu > input[type='checkbox']:checked + ul
+	display: block
+	padding-top: 30px
+	margin: 0
+
+.menu li
+	list-style: none
+	text-align: center
+	padding: 10px 0
+
+	@media screen and (min-width: $break-small)
+		display: inline-block
+
+.menu a
+	display: block
+	text-decoration: none
+	padding: 5px 30px;
