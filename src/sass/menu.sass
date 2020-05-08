@@ -2,7 +2,7 @@ $break-small: 764px
 
 #top_menu 
 	position: sticky
-	z-index: 3
+	z-index: 9
 	top: 0
 	margin: 0
 	padding: 0
@@ -19,13 +19,14 @@ $break-small: 764px
 
 .navbar-handle
 	line-height: 40px
-	width: 50px
+	width: 40px
 	height: 40px
 	margin: 3px
+	padding: 20px 0
 	position: fixed
 	display: inline-block
 	cursor: pointer
-	right: 0
+	right: 15px
 
 	@media screen and (min-width: $break-small)
 		display: none
@@ -61,3 +62,13 @@ $break-small: 764px
 	display: block
 	text-decoration: none
 	padding: 5px 30px;
+
+.fix-menu
+	background: rgba(85, 126, 131, 0.36)
+	a
+		color: #4D5E58
+	li
+		&:hover
+			background: #557E83
+			a
+				color: #fff

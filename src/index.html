@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/libs/modern-css-reset/reset.min.css">
-	<link rel="stylesheet" href="/libs/skeleton/skeleton.css">
+	<link rel="stylesheet" href="libs/modern-css-reset/reset.min.css">
+	<link rel="stylesheet" href="libs/skeleton/skeleton.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Нисарга</title>
 	<meta name="description" content="Описание страницы">
 </head>
 <body>
 
-<header class="container">
+<header class="container top_header">
 	<div class="one-half column social_top">
 		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
 			<svg><use xlink:href="/img/social-dark.svg#facebook-dark"></use></svg>
@@ -31,12 +31,13 @@
 
 <div id="top_block">
 	<img src="img/logo.svg" class="logo_top" alt="Логотип">
-	<h3>Центр самопознания</h3>
-	<h1>Нисарга</h1>
+
 </div>
 
 <nav id="top_menu" class="menu">
-	<label for="navbar-checkbox" class="navbar-handle">Меню</label>
+	<label for="navbar-checkbox" class="navbar-handle">
+		<svg><use xlink:href="/img/social-dark.svg#menu-dark"></use></svg>
+	</label>
 	<input type="checkbox" id="navbar-checkbox"/>
 	<ul>
 		<li><a href="#">Мероприятия</a></li>
@@ -53,20 +54,20 @@
 		<article class="row">
 			<div class="one-half column events_img">
 				<div>
-					<img src="/img/events/m1-img0.png" alt="Зеркало подсознания">
+					<img src="img/events/m1-img0.png" alt="Зеркало подсознания">
 				</div>
 				<span>Ранняя регистрация со скидкой</span>
 			</div>
 			<div class="one-half column events_info">
 				<h3>Зеркало подсознания</h3>
-				<span>29 февраля 2020</span>
+				<span class="events_date">29 февраля 2020</span>
 				<span class="events_city">Ярославль</span>
 				<a href="#">Подробнее</a>
 				<a href="#">Заполнить анкету</a>
 				<div class="events_imgs_block">
-					<div class="events_imgs"><img src="/img/events/m1-img1.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m1-img2.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m1-img3.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m1-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m1-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m1-img3.png" alt=""></div>
 				</div>	
 			</div>
 		</article>
@@ -74,20 +75,20 @@
 		<article class="row">
 			<div class="one-half column events_img">
 				<div>
-					<img src="/img/events/m2-img0.png" alt="География меня">
+					<img src="img/events/m2-img0.png" alt="География меня">
 				</div>
 				<span>Набор закрыт</span>
 			</div>
 			<div class="one-half column events_info">
 				<h3>География меня</h3>
-				<span>15 февраля 2020</span>
+				<span class="events_date">15 февраля 2020</span>
 				<span class="events_city">Киев</span>
 				<a href="#">Подробнее</a>
 				<a href="#">Заполнить анкету</a>
 				<div class="events_imgs_block">
-					<div class="events_imgs"><img src="/img/events/m2-img1.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m2-img2.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m2-img3.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m2-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m2-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m2-img3.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -95,20 +96,20 @@
 		<article class="row">
 			<div class="one-half column events_img">
 				<div>
-					<img src="/img/events/m3-img0.png" alt="Атма Вичара">
+					<img src="img/events/m3-img0.png" alt="Атма Вичара">
 				</div>
 				<span>Ранняя регистрация со скидкой</span>
 			</div>
 			<div class="one-half column events_info">
 				<h3>Атма Вичара</h3>
-				<span>01-07 мая 2020</span>
+				<span class="events_date">01-07 мая 2020</span>
 				<span class="events_city">Ярославль</span>
 				<a href="#">Подробнее</a>
 				<a href="#">Заполнить анкету</a>
 				<div class="events_imgs_block">
-					<div class="events_imgs"><img src="/img/events/m3-img1.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m3-img2.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m3-img3.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m3-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m3-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m3-img3.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -116,20 +117,19 @@
 		<article class="row">
 			<div class="one-half column events_img">
 				<div>
-					<img src="/img/events/m4-img0.png" alt="Сатсанг">
+					<img src="img/events/m4-img0.png" alt="Сатсанг">
 				</div>				
 				<span>Вход свободный</span>
 			</div>
 			<div class="one-half column events_info">
 				<h3>Сатсанг</h3>
-				<span>08 мая 2020</span>
+				<span class="events_date">08 мая 2020</span>
 				<span class="events_city">Москва</span>
 				<a href="#">Подробнее</a>
-				<a href="#">Заполнить анкету</a>
 				<div class="events_imgs_block">
-					<div class="events_imgs"><img src="/img/events/m4-img1.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m4-img2.png" alt=""></div>
-					<div class="events_imgs"><img src="/img/events/m4-img3.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m4-img1.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m4-img2.png" alt=""></div>
+					<div class="events_imgs"><img src="img/events/m4-img3.png" alt=""></div>
 				</div>
 			</div>
 		</article>
@@ -142,9 +142,9 @@
 
 	<section id="video_section">
 		<div class="last_video">
-			<img src="/img/video.png" class="video_file" alt="Видео">
+			<img src="img/video.png" class="video_file" alt="Видео">
 			<h3>МАГИЧЕСКИЙ ответ<br>на ваш вопрос </h3>
-			<img src="/img/play_video.svg" class="play_video_button" alt="">
+			<img src="img/play_video.svg" class="play_video_button" alt="">
 		</div>
 
 		<div class="button_block">
@@ -170,8 +170,8 @@
 
 <footer>
 	<div class="container">   
-		<div class="one-half column">
-			<blockquote>Рельному ничто не угрожает. Нерального не существует</blockquote>
+		<div class="one-half column column-l">
+			<blockquote>Реальному ничто не угрожает. Нереального не существует</blockquote>
 			<p>Введение в Курс чудес</p>
 			<div class="social_footer">
 				<span>Будьте с нами</span>
@@ -188,19 +188,26 @@
 					<svg><use xlink:href="/img/social-light.svg#youtube-light"></use></svg>
 				</a>
 			</div>
-			<a href="#">Подписаться на новости</a>
-			<a href="#">Предложить мероприятие в вашем городе</a>
+			<div class="footer_link">
+				<a href="#">Подписаться на новости</a>
+				<a href="#">Предложить мероприятие в вашем городе</a>
+			</div>
 		</div>
-		<div class="one-half column">
-			<img src="/img/logo-w.svg" alt="Логотип">
-			<a href="#">Политика Конфиденциальности</a>
-			<p>Разработано в <a href="#">МГ Свежак</a></p>
+		<div class="one-half column column-r">
+			<div class="footer_logo">
+				<img src="img/logo-w.svg" alt="Логотип">
+				<a href="#">namaste@nisarga.center</a>
+			</div>
+			<div class="footer_info">
+				<a href="#">Политика Конфиденциальности</a>
+				<p>Разработано в <a href="#">МГ Свежак</a></p>
+			</div>
 		</div>
 	</div>
 	<a id="donate" href="#">Поблагодарить</a>
 </footer>
 
-<script src="/js/common.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>
