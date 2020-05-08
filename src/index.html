@@ -156,10 +156,11 @@
 		<h3>Изучайте нашу библиотеку</h3>
 		<p>Подборка из авторов и их произведений, фильмов, картин и других материалов от Юрия Менячихина и регулярные новости о наших мероприятиях </p>
 		<form>
-			<input type="text" required="" placeholder="Имя">
-			<input type="email" required="" placeholder="E-mail"><br>
-			<input type="text" required="" placeholder="Выберите страну">
-			<input type="text" required="" placeholder="Выберите город">
+			<input type="text" class="left_input" required="" placeholder="Имя"><input type="email" class="right_input" required="" placeholder="E-mail">
+			<input type="text" class="left_input" required="" placeholder="Выберите страну"><input type="text" class="right_input" required="" placeholder="Выберите город">
+			<div class="politics_input_block">
+				<input type="checkbox" class="politics_input" onclick="check();" value="" autocomplete="on" checked><span>Я согласен с политикой конфиденциальности</span>
+			</div>
 		</form>
 		<div class="button_block">
 			<button>Получить на почту</button>

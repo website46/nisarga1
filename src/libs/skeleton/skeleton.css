@@ -151,7 +151,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 0px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -226,7 +226,7 @@ code {
   font-size: 90%;
   white-space: nowrap;
   background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  border: 0px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
   display: block;

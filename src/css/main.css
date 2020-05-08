@@ -76,9 +76,9 @@
   padding: 5px 30px; }
 
 .fix-menu {
-  background: rgba(85, 126, 131, 0.36); }
+  background: rgba(85, 126, 131, 0.7); }
   .fix-menu a {
-    color: #4D5E58; }
+    color: #fff; }
   .fix-menu li:hover {
     background: #557E83; }
     .fix-menu li:hover a {
@@ -532,8 +532,8 @@ blockquote {
 #library_section h3 {
   font-family: 'Rozoviy Chulok';
   color: #95493C;
-  font-size: 3.4em;
-  font-weight: 600; }
+  font-size: 4em;
+  font-weight: 400; }
 
 #library_section p {
   display: block;
@@ -542,6 +542,43 @@ blockquote {
 @media screen and (max-width: 1140px) {
   #library_section {
     text-align: center; } }
+
+#library_section form {
+  text-align: center; }
+  #library_section form input {
+    width: 50%;
+    min-width: 280px;
+    padding: 25px 30px; }
+  #library_section form .left_input {
+    border-radius: 100px 0 0 100px;
+    -webkit-box-shadow: inset 3px 0px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 3px 0px 1px 2px rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 764px) {
+      #library_section form .left_input {
+        border-radius: 100px;
+        -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2); } }
+  #library_section form .right_input {
+    border-radius: 0 100px 100px 0;
+    -webkit-box-shadow: inset -3px 0px 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset -3px 0px 1px 2px rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 764px) {
+      #library_section form .right_input {
+        border-radius: 100px;
+        -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2); } }
+  #library_section form .politics_input_block {
+    text-align: right;
+    margin: 0 auto;
+    padding: 0 5px; }
+    #library_section form .politics_input_block input[type="checkbox"] {
+      width: auto;
+      min-width: auto;
+      margin-right: 7px;
+      margin-bottom: 3px;
+      vertical-align: middle; }
+    #library_section form .politics_input_block span {
+      vertical-align: middle; }
 
 /*Footer*/
 footer {
