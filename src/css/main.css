@@ -28,7 +28,21 @@
 #top_menu li {
   text-transform: uppercase;
   color: #4D5E58;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
+  #top_menu li:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #65746E;
+    -webkit-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    left: 0;
+    bottom: 0; }
+  #top_menu li:hover:before {
+    width: 100%; }
 
 .navbar-handle {
   line-height: 40px;
@@ -59,7 +73,6 @@
 
 .menu > input[type='checkbox']:checked + ul {
   display: block;
-  padding-top: 30px;
   margin: 0; }
 
 .menu li {
@@ -76,9 +89,12 @@
   padding: 5px 30px; }
 
 .fix-menu {
-  background: rgba(85, 126, 131, 0.7); }
+  background: rgba(85, 126, 131, 0.75); }
   .fix-menu a {
     color: #fff; }
+    @media screen and (max-width: 764px) {
+      .fix-menu a {
+        color: #4D5E58; } }
   .fix-menu li:hover {
     background: #557E83; }
     .fix-menu li:hover a {
@@ -380,7 +396,7 @@
   #events_section .events_img span {
     position: relative;
     z-index: 3;
-    margin-top: -140px;
+    margin-top: -160px;
     background: #F3C5A3;
     color: #65746E;
     -webkit-box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.25);
@@ -441,6 +457,12 @@
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
               transform: scale(1.2); }
+    @media screen and (max-width: 764px) {
+      #video_section .play_video_button {
+        top: 25%;
+        width: 40px;
+        left: -webkit-calc(50% - 20px);
+        left: calc(50% - 20px); } }
   #video_section h3 {
     position: absolute;
     z-index: 3;
@@ -450,11 +472,14 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 2.6em; }
+    @media screen and (max-width: 764px) {
+      #video_section h3 {
+        font-size: 1.2em; } }
 
 html {
   background: #fefefe;
   background-image: url("/img/fon0.png");
-  background-size: cover;
+  background-size: 100%;
   background-position: top left; }
 
 body {
@@ -481,7 +506,7 @@ blockquote {
   text-transform: uppercase;
   color: #4D5E58;
   background: url("/img/fonbl1.png");
-  background-size: auto;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 600px;
@@ -504,7 +529,7 @@ blockquote {
 #facebook-dark .path, #instagram-dark .path, #vkontakte-dark .path, #youtube-dark .path {
   fill: #65746E; }
   #facebook-dark .path:hover, #instagram-dark .path:hover, #vkontakte-dark .path:hover, #youtube-dark .path:hover {
-    fill: #95493C; }
+    fill: #F3C5A3; }
 
 .like_top {
   text-align: right;
@@ -548,7 +573,9 @@ blockquote {
   #library_section form input {
     width: 50%;
     min-width: 280px;
-    padding: 25px 30px; }
+    padding: 25px 30px;
+    border: 0;
+    color: #65746E; }
   #library_section form .left_input {
     border-radius: 100px 0 0 100px;
     -webkit-box-shadow: inset 3px 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -622,7 +649,15 @@ footer {
 
 footer a {
   display: inline-block;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  footer a:hover {
+    color: #F3C5A3;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
 
 footer blockquote {
   font-size: 2.6em;
@@ -679,7 +714,7 @@ footer blockquote {
 #facebook-light .path, #instagram-light .path, #vkontakte-light .path, #youtube-light .path {
   fill: #fff; }
   #facebook-light .path:hover, #instagram-light .path:hover, #vkontakte-light .path:hover, #youtube-light .path:hover {
-    fill: #95493C; }
+    fill: #F3C5A3; }
 
 #donate {
   position: fixed;

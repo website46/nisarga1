@@ -16,6 +16,21 @@ $break-small: 764px
 	text-transform: uppercase
 	color: #4D5E58
 	margin: 0
+	position: relative
+
+	&:before
+		position: absolute
+		content: ''
+		height: 2px
+		width: 0
+		background: #65746E
+		transition: width 0.3s ease-in-out
+		left: 0
+		bottom: 0
+
+	&:hover
+		&:before
+			width: 100%
 
 .navbar-handle
 	line-height: 40px
@@ -47,7 +62,6 @@ $break-small: 764px
 
 .menu > input[type='checkbox']:checked + ul
 	display: block
-	padding-top: 30px
 	margin: 0
 
 .menu li
@@ -64,10 +78,13 @@ $break-small: 764px
 	padding: 5px 30px;
 
 .fix-menu
-	background: rgba(85, 126, 131, 0.7)
+	background: rgba(85, 126, 131, 0.75)
 	
 	a
 		color: #fff
+
+		@media screen and (max-width: $break-small)
+			color: #4D5E58
 	li
 		&:hover
 			background: #557E83

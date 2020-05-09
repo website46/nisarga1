@@ -10,7 +10,7 @@ $break-midle: 1140px
 html
 	background: #fefefe
 	background-image: url('/img/fon0.png')
-	background-size: cover
+	background-size: 100%
 	background-position: top left
 
 body
@@ -37,7 +37,7 @@ blockquote
 	text-transform: uppercase
 	color: #4D5E58
 	background: url('/img/fonbl1.png')
-	background-size: auto
+	background-size: 70%
 	background-repeat: no-repeat
 	background-position: center center
 	min-height: 600px
@@ -62,7 +62,7 @@ blockquote
 	.path
 		fill: #65746E
 		&:hover
-			fill: #95493C
+			fill: #F3C5A3
 
 .like_top
 	text-align: right
@@ -108,7 +108,8 @@ blockquote
 			width: 50%
 			min-width: 280px
 			padding: 25px 30px
-		
+			border: 0
+			color: #65746E
 
 		.left_input
 			border-radius: 100px 0 0 100px
@@ -168,9 +169,16 @@ footer
 	@media screen and (max-width: $break-small)
 		text-align: center
 
-footer a
-	display: inline-block
-	color: #fff
+footer 
+	a
+		display: inline-block
+		color: #fff
+		transition: .5s
+
+		&:hover
+			color: #F3C5A3
+			transition: .5s
+	
 
 footer blockquote 
 	font-size: 2.6em
@@ -234,7 +242,7 @@ footer blockquote
 	.path
 		fill: #fff
 		&:hover
-			fill: #95493C
+			fill: #F3C5A3
 
 #donate
 	position: fixed
