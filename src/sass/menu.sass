@@ -10,7 +10,10 @@ $break-small: 764px
 
 	@media screen and (max-width: $break-small)
 		position: fixed
-		background: #fff
+		background: rgba(85, 126, 131, 0.75)
+
+		a
+			color: #fff
 
 #top_menu li
 	text-transform: uppercase
@@ -21,7 +24,7 @@ $break-small: 764px
 	&:before
 		position: absolute
 		content: ''
-		height: 2px
+		height: 1px
 		width: 0
 		background: #65746E
 		transition: width 0.3s ease-in-out
@@ -40,6 +43,7 @@ $break-small: 764px
 	margin: 3px
 	padding: 20px 0
 	position: fixed
+	z-index: 3
 	display: inline-block
 	cursor: pointer
 	right: 15px
