@@ -42,7 +42,9 @@
     left: 0;
     bottom: 0; }
   #top_menu li:hover:before {
-    width: 100%; }
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px);
+    left: 30px; }
 
 .navbar-handle {
   line-height: 40px;
