@@ -72,6 +72,12 @@ blockquote
 		display: inline-block
 		vertical-align: middle
 
+		h1
+			font-size: 16px;
+			letter-spacing: 0;
+			display: inline-block;
+			margin: 0;
+
 	iframe
 		display: inline-block
 		vertical-align: middle
@@ -257,25 +263,32 @@ footer blockquote
 	position: fixed
 	z-index: 5
 	right: 0
+	transform: rotate(270deg)
 	top: 30%
-	margin-right: -160px
+	margin-right: -70px
 	font-size: 18px
 	background: #557E83
 	color: #fff
-	padding: 10px 15px 
+	padding: 15px 15px 35px 15px 
 	text-transform: uppercase
 	text-decoration: none
 	transition: .5s
 
+	@media screen and (max-width: $break-small)
+		margin-right: -20px
+
 	svg
 		width: 45px
 		height: 45px;
-		display: inline-block
+		display: none
 		vertical-align: middle
 		margin-right: 5px
-
 		fill: #fff
 		transition: .5s
+
+		@media screen and (max-width: $break-small)
+			display: inline-block
+			transform: rotate(90deg)
 
 	span
 		display: inline-block
@@ -283,11 +296,17 @@ footer blockquote
 		width: 150px
 		text-align: center
 
+		@media screen and (max-width: $break-small)
+			display: none
+
 	&:hover
 		background: #F3C5A3
 		color: #65746E
-		margin-right: 0px
+		margin-right: -60px
 		transition: .5s
+
+		@media screen and (max-width: $break-small)
+			margin-right: -20px
 
 		svg
 			fill: #65746E

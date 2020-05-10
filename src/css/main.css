@@ -567,6 +567,11 @@ blockquote {
   .like_top span {
     display: inline-block;
     vertical-align: middle; }
+    .like_top span h1 {
+      font-size: 16px;
+      letter-spacing: 0;
+      display: inline-block;
+      margin: 0; }
   .like_top iframe {
     display: inline-block;
     vertical-align: middle;
@@ -752,39 +757,57 @@ footer blockquote {
   position: fixed;
   z-index: 5;
   right: 0;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
   top: 30%;
-  margin-right: -160px;
+  margin-right: -70px;
   font-size: 18px;
   background: #557E83;
   color: #fff;
-  padding: 10px 15px;
+  padding: 15px 15px 35px 15px;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
+  @media screen and (max-width: 764px) {
+    #donate {
+      margin-right: -20px; } }
   #donate svg {
     width: 45px;
     height: 45px;
-    display: inline-block;
+    display: none;
     vertical-align: middle;
     margin-right: 5px;
     fill: #fff;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
+    @media screen and (max-width: 764px) {
+      #donate svg {
+        display: inline-block;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg); } }
   #donate span {
     display: inline-block;
     vertical-align: middle;
     width: 150px;
     text-align: center; }
+    @media screen and (max-width: 764px) {
+      #donate span {
+        display: none; } }
   #donate:hover {
     background: #F3C5A3;
     color: #65746E;
-    margin-right: 0px;
+    margin-right: -60px;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
+    @media screen and (max-width: 764px) {
+      #donate:hover {
+        margin-right: -20px; } }
     #donate:hover svg {
       fill: #65746E;
       -webkit-transition: .5s;
