@@ -42,7 +42,7 @@
     -o-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     left: 0;
-    bottom: 15px; }
+    bottom: 10px; }
   #top_menu li:hover:before {
     width: -webkit-calc(100% - 60px);
     width: calc(100% - 60px);
@@ -343,7 +343,16 @@
     border: 1px dashed #557E83;
     border-radius: 100%;
     margin: 15px;
-    padding: 15px; }
+    padding: 15px;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    -o-transition: transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s; }
+    #events_section .events_info .events_imgs img:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05); }
   @media screen and (max-width: 1140px) {
     #events_section .events_info .events_imgs {
       display: none; } }
