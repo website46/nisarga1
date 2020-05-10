@@ -510,10 +510,6 @@ blockquote {
   text-align: center;
   text-transform: uppercase;
   color: #4D5E58;
-  background: url("/img/fonbl1.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center center;
   min-height: 600px;
   padding: 1% 2%; }
   @media screen and (max-width: 764px) {
