@@ -42,7 +42,7 @@
     -o-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     left: 0;
-    bottom: 0; }
+    bottom: 15px; }
   #top_menu li:hover:before {
     width: -webkit-calc(100% - 60px);
     width: calc(100% - 60px);
@@ -353,6 +353,22 @@
     text-transform: uppercase;
     margin: 15px 0;
     font-size: 14px; }
+    #events_section .events_info a span {
+      position: relative; }
+      #events_section .events_info a span:before {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 0;
+        background: #65746E;
+        -webkit-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+        left: 0;
+        bottom: -5px; }
+      #events_section .events_info a span:hover:before {
+        width: 100%;
+        left: 0px; }
   #events_section .events_info .events_city {
     display: block;
     text-transform: uppercase;
@@ -464,10 +480,10 @@
               transform: scale(1.2); }
     @media screen and (max-width: 764px) {
       #video_section .play_video_button {
-        top: 25%;
-        width: 40px;
-        left: -webkit-calc(50% - 20px);
-        left: calc(50% - 20px); } }
+        top: 20%;
+        width: 60px;
+        left: -webkit-calc(50% - 30px);
+        left: calc(50% - 30px); } }
   #video_section h3 {
     position: absolute;
     z-index: 3;
@@ -539,6 +555,13 @@ blockquote {
   @media screen and (max-width: 764px) {
     .like_top {
       display: none; } }
+  .like_top span {
+    display: inline-block;
+    vertical-align: middle; }
+  .like_top iframe {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px; }
 
 .logo_top {
   width: 90%;
