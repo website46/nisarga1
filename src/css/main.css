@@ -42,7 +42,7 @@
     -o-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     left: 0;
-    bottom: 10px; }
+    bottom: 12.5px; }
   #top_menu li:hover:before {
     width: -webkit-calc(100% - 60px);
     width: calc(100% - 60px);
@@ -534,6 +534,9 @@ blockquote {
 #top_block {
   text-align: center;
   text-transform: uppercase;
+  background-image: url("/img/fonbl1.png");
+  background-size: 95%;
+  background-position: center center;
   color: #4D5E58;
   min-height: 600px;
   padding: 1% 2%; }
@@ -773,10 +776,11 @@ footer blockquote {
   transition: .5s; }
   @media screen and (max-width: 764px) {
     #donate {
-      margin-right: -20px; } }
+      margin-right: -20px;
+      padding: 10px 5px 40px 10px; } }
   #donate svg {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     display: none;
     vertical-align: middle;
     margin-right: 5px;
