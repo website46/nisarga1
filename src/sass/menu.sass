@@ -21,6 +21,13 @@ $break-small: 764px
 	margin: 0
 	position: relative
 
+	@media screen and (max-width: $break-small)
+		&:hover
+			background: #557E83
+		&:before
+			display: none
+			
+
 	&:before
 		position: absolute
 		content: ''
@@ -50,16 +57,18 @@ $break-small: 764px
 
 	@media screen and (min-width: $break-small)
 		display: none
-			
-.menu ul
-	display: none
-	width: 100%
 
-	@media screen and (min-width: $break-small)
-		display: block
-		overflow: auto
+.menu 
+	ul
+		display: none
+		width: 100%
 		text-align: center
-		margin: 0
+
+		@media screen and (min-width: $break-small)
+			display: block
+			overflow: auto
+			text-align: center
+			margin: 0
 
 	
 .menu > input[type='checkbox']	
@@ -69,29 +78,66 @@ $break-small: 764px
 	display: block
 	margin: 0
 
-.menu li
-	list-style: none
-	text-align: center
-	padding: 10px 0
+.menu 
+	li
+		list-style: none
+		text-align: center
+		padding: 0
 
-	@media screen and (min-width: $break-small)
-		display: inline-block
+		@media screen and (min-width: $break-small)
+			display: inline-block
 
-.menu a
-	display: block
-	text-decoration: none
-	padding: 5px 30px;
+
+	.logo-menu
+		display: none
+
+		@media screen and (max-width: $break-small)
+			display: inline-block
+			width: 100%
+			padding: 0
+
+			svg
+				width: 48px
+				height: 48px
+
+.menu 
+	a
+		display: block
+		text-decoration: none
+		padding: 15px 30px;
+
+		@media screen and (max-width: $break-small)
+			padding: 15px 0px
 
 .fix-menu
 	background: rgba(85, 126, 131, 0.75)
-	
+
 	a
 		color: #fff
+		padding: 0 30px
 
 		@media screen and (max-width: $break-small)
 			color: #4D5E58
+
+	.logo-menu
+		display: inline-block
+		vertical-align: middle
+		a
+			padding: 0
+		svg
+			width: 48px
+			height: 48px
+
 	li
+		vertical-align: middle
+		padding: 0
+
+		a
+			padding: 15px 30px
 		&:hover
 			background: #557E83
 			a
 				color: #fff
+
+		&:before
+			display: none

@@ -174,7 +174,7 @@ footer
 			display: flex
 			justify-content: space-between
 			flex-direction: column
-			min-height: 300px
+			min-height: 360px
 
 		.column-r
 			align-items: end
@@ -191,7 +191,25 @@ footer
 	a
 		display: inline-block
 		color: #fff
+		text-decoration: none
 		transition: .5s
+		position: relative
+		margin-bottom: 10px
+
+		&:before
+			position: absolute
+			content: ''
+			height: 1px
+			width: 0
+			background: #fff
+			transition: width 0.3s ease-in-out
+			left: 0
+			bottom: -5px
+
+		&:hover
+			&:before
+				width: 100%
+			
 
 		&:hover
 			color: #F3C5A3
@@ -205,10 +223,6 @@ footer blockquote
 
 	@media screen and (max-width: $break-midle)
 		font-size: 32px
-
-.footer_link
-	a
-		display: block
 
 .footer_logo
 	text-align: right
@@ -242,6 +256,9 @@ footer blockquote
 		svg
 			width: 30px
 			height: 30px
+
+		&:before
+			display: none
 
 	span
 		display: inline-block
@@ -304,8 +321,6 @@ footer blockquote
 			display: none
 
 	&:hover
-		background: #F3C5A3
-		color: #65746E
 		margin-right: -60px
 		transition: .5s
 
