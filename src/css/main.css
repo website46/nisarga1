@@ -128,7 +128,7 @@
     display: inline-block;
     vertical-align: middle; }
     .fix-menu .logo-menu a {
-      padding: 0; }
+      padding: 0 5px; }
     .fix-menu .logo-menu svg {
       width: 48px;
       height: 48px; }
@@ -867,8 +867,3 @@ footer blockquote {
     @media screen and (max-width: 764px) {
       #donate:hover {
         margin-right: -20px; } }
-    #donate:hover svg {
-      fill: #65746E;
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s; }
