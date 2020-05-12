@@ -23,7 +23,7 @@
   @media screen and (max-width: 764px) {
     #top_menu {
       position: fixed;
-      background: rgba(85, 126, 131, 0.75); }
+      background: rgba(85, 126, 131, 0.8); }
       #top_menu a {
         color: #fff; } }
 
@@ -114,7 +114,10 @@
       padding: 15px 0px; } }
 
 .fix-menu {
-  background: rgba(85, 126, 131, 0.75); }
+  background: rgba(85, 126, 131, 0.8);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
   .fix-menu a {
     color: #fff;
     padding: 0 30px; }
@@ -135,7 +138,10 @@
     .fix-menu li a {
       padding: 15px 30px; }
     .fix-menu li:hover {
-      background: #557E83; }
+      background: #557E83;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
       .fix-menu li:hover a {
         color: #fff; }
     .fix-menu li:before {
