@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="libs/modern-css-reset/reset.min.css">
 	<link rel="stylesheet" href="libs/skeleton/skeleton.css">
 	<link rel="stylesheet" href="css/main.css">
-	<title>Нисарга</title>
+	<title>Нисарга | Центр самопознания</title>
 	<meta name="description" content="Описание страницы">
 </head>
 <body>
@@ -14,16 +14,16 @@
 <header class="container top_header">
 	<div class="one-half column social_top">
 		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
-			<svg><use xlink:href="/img/social-dark.svg#facebook-dark"></use></svg>
+			<img src="img/icons/facebook.svg" alt="facebook">
 		</a>
 		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
-			<svg><use xlink:href="/img/social-dark.svg#instagram-dark"></use></svg>
+			<img src="img/icons/instagram.svg" alt="instagram">
 		</a>
 		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
-			<svg><use xlink:href="/img/social-dark.svg#vkontakte-dark"></use></svg>
+			<img src="img/icons/vkontakte.svg" alt="ВКонтакте">
 		</a>
 		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
-			<svg><use xlink:href="/img/social-dark.svg#youtube-dark"></use></svg>
+			<img src="img/icons/youtube.svg" alt="youtube">
 		</a>
 	</div>
 	<div class="one-half column like_top"><span>Мне нравится <h1>Нисарга</h1></span>
@@ -36,17 +36,34 @@
 </div>
 
 <nav id="top_menu" class="menu">
+	<div class="logo_menu">
+		<a href="/index.html"><img src="img/logo-menu.svg" alt=""></a>
+	</div>
+	<div class="social_menu">
+		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/facebook-w.svg" alt="">
+		</a>
+		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/instagram-w.svg" alt="">
+		</a>
+		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/vkontakte-w.svg" alt="">
+		</a>
+		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/youtube-w.svg" alt="">
+		</a>
+	</div>
 	<label for="navbar-checkbox" class="navbar-handle">
-		<svg><use xlink:href="/img/social-dark.svg#menu-dark"></use></svg>
+		<div class="burger"></div>
 	</label>
-	<input type="checkbox" id="navbar-checkbox"/>
+	<input type="checkbox" id="navbar-checkbox" class="mobile-menu-checkbox">	
 	<ul>
-		<li class="logo-menu"><a href="#"><svg><use xlink:href="/img/logo-menu.svg#logo-menu"></use></svg></a></li>
-		<li><a href="#">Мероприятия</a></li>
-		<li><a href="#">Видео</a></li>
-		<li><a href="#">О центре</a></li>
-		<li><a href="#">Отзывы</a></li>
-		<li><a href="#">Контакты</a></li>
+		<li class="logo-menu"><a href="/index.html"><img src="img/logo-menu.svg" alt=""></a></li>
+		<li><a href="/events.html">Мероприятия</a></li>
+		<li><a href="/video.html">Видео</a></li>
+		<li><a href="/about.html">О центре</a></li>
+		<li><a href="/reviews.html">Отзывы</a></li>
+		<li><a href="/contacts.html">Контакты</a></li>
 	</ul>
 </nav>
 
@@ -146,7 +163,7 @@
 		<div class="last_video">
 			<img src="img/video.png" class="video_file" alt="Видео">
 			<h3>МАГИЧЕСКИЙ ответ<br>на ваш вопрос </h3>
-			<img src="img/play_video.svg" class="play_video_button" alt="">
+			<img src="img/icons/play_video.svg" class="play_video_button" alt="">
 		</div>
 
 		<div class="button_block">
@@ -179,16 +196,16 @@
 			<div class="social_footer">
 				<span>Будьте с нами</span>
 				<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
-					<svg><use xlink:href="/img/social-light.svg#facebook-light"></use></svg>
+					<img src="img/icons/facebook-w.svg" alt="">
 				</a>
 				<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
-					<svg><use xlink:href="/img/social-light.svg#instagram-light"></use></svg>
+					<img src="img/icons/instagram-w.svg" alt="">
 				</a>
 				<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
-					<svg><use xlink:href="/img/social-light.svg#vkontakte-light"></use></svg>
+					<img src="img/icons/vkontakte-w.svg" alt="">
 				</a>
 				<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
-					<svg><use xlink:href="/img/social-light.svg#youtube-light"></use></svg>
+					<img src="img/icons/youtube-w.svg" alt="">
 				</a>
 			</div>
 			<div class="footer_link">
@@ -207,7 +224,7 @@
 			</div>
 		</div>
 	</div>
-	<a id="donate" href="#"><svg><use xlink:href="/img/donate.svg#donate_icon"></use></svg> <span>Поблагодарить</span></a>
+	<a id="donate" href="/donate.html"><img src="img/icons/donate.svg" alt=""> <span>Поблагодарить</span></a>
 </footer>
 
 <script src="js/common.js"></script>

@@ -1,4 +1,5 @@
 $break-small: 764px
+$break-midle: 1140px
 
 #video_section
 	position: relative
@@ -51,3 +52,142 @@ $break-small: 764px
 
 		@media screen and (max-width: $break-small)
 			font-size: 1.2em
+
+#video-page
+	background: #F8F3E7
+	background-image: url('../img/fon-video.png')
+	background-size: cover
+	background-position: top left
+
+#video_page_section
+	margin: 3em 0 5em 0
+	h3
+		font-family: 'Rozoviy Chulok'
+		width: 240px
+		color: #95493C
+		font-size: 4em
+		line-height: 1em
+		font-weight: 400
+		text-align: right
+		margin-bottom: 20px
+
+	h4
+		position: relative
+		text-transform: uppercase
+		color: #95493C
+		font-size: 36px
+		font-weight: 400
+		margin-bottom: 30px
+		margin-top: 30px
+		display: flex
+		align-items: center
+
+		@media screen and (max-width: $break-small)
+			flex-wrap: wrap
+
+		span
+			flex-shrink: 0
+
+			@media screen and (max-width: $break-small)
+				flex-shrink: inherit
+
+		&:after			
+			z-index: 0
+			content: ''
+			height: 1px
+			width: 100%
+			background-image: -webkit-gradient(linear, left top, right top, from(#557E83), color-stop(50%, #557E83), color-stop(50%, transparent), to(transparent))
+			background-image: -o-linear-gradient(left, #557E83, #557E83 50%, transparent 50%, transparent 100%)
+			background-image: linear-gradient(90deg, #557E83, #557E83 50%, transparent 50%, transparent 100%)
+			background-size: 15px 1px
+			margin-left: 10px
+
+	.new_video
+		position: relative
+		padding: 15px
+		background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: %23557E83; stroke-width: 2; stroke-dasharray: 8 6'/></svg>")
+		img
+			width: 100%
+
+		&:after
+			position: absolute			
+			content: ''
+			top: 15px
+			left: 15px
+			z-index: 2
+			display: block
+			width: calc(100% - 30px)
+			height: calc(100% - 30px)
+			background: rgba(71, 81, 99, 0.72)
+
+		.play_video_button
+			position: absolute
+			z-index: 3
+			top: calc(50% - 45px)
+			width: 90px
+			max-width: 25%
+			left: calc(50% - 45px)
+			transition: transform .5s
+			cursor: pointer
+
+			&:hover
+				transform: scale(1.2)
+
+			@media screen and (max-width: $break-small)
+				top: 20%
+				width: 60px
+				left: calc(50% - 30px)
+
+	.new_video_title 
+		display: block
+
+	.item_video		
+		margin-top: 25px
+		margin-bottom: 15px
+
+
+		.item_video_img
+			position: relative
+
+			img
+				width: 100%
+				margin-bottom: 15px
+
+			&:after
+				position: absolute			
+				content: ''
+				top: 0px
+				left: 0px
+				z-index: 2
+				display: block
+				width: 100%
+				height: 100%
+				background: rgba(71, 81, 99, 0.72)
+
+			.play_video_button
+				position: absolute
+				z-index: 3
+				top: calc(50% - 30px)
+				width: 60px
+				max-width: 25%
+				left: calc(50% - 30px)
+				transition: transform .5s
+				cursor: pointer
+
+				&:hover
+					transform: scale(1.2)
+
+				@media screen and (max-width: $break-small)
+					top: 20%
+					width: 60px
+					left: calc(50% - 30px)
+
+		.item_video_info
+			font-weight: 600
+
+			.item_video_title 
+				display: block
+				font-weight: 400
+
+	.youtube-img 
+		margin-left: auto

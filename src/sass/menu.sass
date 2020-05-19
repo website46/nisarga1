@@ -1,4 +1,5 @@
 $break-small: 764px
+$break-midle: 1140px
 
 #top_menu 
 	position: sticky
@@ -15,48 +16,89 @@ $break-small: 764px
 		a
 			color: #fff
 
-#top_menu li
-	text-transform: uppercase
-	color: #4D5E58
-	margin: 0
-	position: relative
+#top_menu
+	li
+		text-transform: uppercase
+		color: #4D5E58
+		margin: 0
+		position: relative
 
-	@media screen and (max-width: $break-small)
-		&:hover
-			background: #557E83
-		&:before
-			display: none
+		@media screen and (max-width: $break-small)
+			&:hover
+				background: #557E83
+			&:before
+				display: none
 			
 
-	&:before
-		position: absolute
-		content: ''
-		height: 1px
-		width: 0
-		background: #65746E
-		transition: width 0.3s ease-in-out
-		left: 0
-		bottom: 12.5px
-
-	&:hover
 		&:before
-			width: calc(100% - 60px)
-			left: 30px
+			position: absolute
+			content: ''
+			height: 1px
+			width: 0
+			background: #65746E
+			transition: width 0.3s ease-in-out
+			left: 0
+			bottom: 12.5px
+
+		&:hover
+			&:before
+				width: calc(100% - 60px)
+				left: 30px
 
 .navbar-handle
-	line-height: 40px
-	width: 40px
-	height: 40px
-	margin: 3px
-	padding: 20px 0
+	width: auto
+	height: auto
+	margin: 0px
 	position: fixed
 	z-index: 3
 	display: inline-block
 	cursor: pointer
-	right: 15px
+	right: 25px
+	top: 15px
 
 	@media screen and (min-width: $break-small)
 		display: none
+
+	.burger 
+		border: 0
+		background: none
+		outline: 0
+		padding: 0
+		cursor: pointer
+		border-bottom: 4px solid #fff
+		width: 40px
+		transition: border-bottom 1s ease-in-out
+
+		&:before 
+			content: ""
+			display: block
+			border-bottom: 4px solid #fff
+			width: 100%
+			margin-bottom: 5px
+			transition: transform 0.5s ease-in-out
+
+		&:after 
+			content: ""
+			display: block
+			border-bottom: 4px solid #fff
+			width: 100%
+			margin-bottom: 5px
+			transition: transform 0.5s ease-in-out
+
+		&.open 
+			border-bottom: 4px solid transparent
+			transition: border-bottom 0.8s ease-in-out
+			padding-top: 10px
+
+			&:before 
+				transform: rotate(-405deg) translateY(1px) translateX(-3px)
+				transition: transform 0.5s ease-in-out
+				border-bottom: 4px solid #fff
+
+			&:after 
+				transform: rotate(405deg) translateY(-4px) translateX(-5px) 
+				transition: transform 0.5s ease-in-out
+				border-bottom: 4px solid #fff
 
 .menu 
 	ul
@@ -70,7 +112,37 @@ $break-small: 764px
 			text-align: center
 			margin: 0
 
-	
+	.social_menu 
+		display: inline-block
+		vertical-align: middle
+		a
+			display: inline-block
+			padding: 5px 5px 0 5px
+
+			img
+				width: 32px
+				transition: transform .1s
+				&:hover
+					transform: scale(1.2)
+					transition: transform .1s
+
+		@media screen and (min-width: $break-small)
+			display: none
+
+	.logo_menu
+		display: inline-block
+		vertical-align: middle
+		padding: 0 15px
+
+		a
+			padding: 0
+
+			img
+				width: 55px
+
+		@media screen and (min-width: $break-small)
+			display: none
+
 .menu > input[type='checkbox']	
 	display: none
 
@@ -91,23 +163,17 @@ $break-small: 764px
 	.logo-menu
 		display: none
 
-		@media screen and (max-width: $break-small)
-			display: inline-block
-			width: 100%
-			padding: 0
-
-			svg
-				width: 48px
-				height: 48px
-
 .menu 
 	a
 		display: block
 		text-decoration: none
-		padding: 15px 30px;
+		padding: 15px 30px
 
 		@media screen and (max-width: $break-small)
 			padding: 15px 0px
+
+		&:before
+			display: none
 
 .fix-menu
 	background: rgba(85, 126, 131, 0.8)
@@ -123,11 +189,16 @@ $break-small: 764px
 	.logo-menu
 		display: inline-block
 		vertical-align: middle
+		
 		a
 			padding: 0 5px
-		svg
-			width: 48px
-			height: 48px
+
+		img
+			width: 55px
+
+		@media screen and (max-width: $break-small)
+			display: none
+
 
 	li
 		vertical-align: middle
@@ -143,3 +214,71 @@ $break-small: 764px
 
 		&:before
 			display: none
+
+#page_menu 
+	position: sticky
+	z-index: 9
+	top: 0
+	margin: 0
+	padding: 0
+	width: 100%
+	background: rgba(85, 126, 131, 0.8)
+
+	li
+		text-transform: uppercase
+		color: #4D5E58
+		margin: 0
+		position: relative
+
+		@media screen and (max-width: $break-small)
+			&:hover
+				background: #557E83
+			&:before
+				display: none
+
+		a
+			color: #fff
+		&:hover
+			background: #557E83
+			transition: .5s
+
+	.active-menu
+		background: #557E83
+
+	.logo-menu
+		display: inline-block
+		vertical-align: middle
+		
+		a
+			padding: 0 5px
+
+		img
+			width: 55px
+	
+.secondary-menu
+	list-style: none
+	display: block
+	margin: 0 auto
+	text-align: center
+
+	li
+		display: inline-block
+		padding: 5px 20px
+		margin: 0 15px
+		text-transform: uppercase
+		color: #557E83
+		cursor: pointer
+
+		&:nth-child(1)
+			background: #557E83
+			color: #fff
+			border-radius: 50px
+
+		&:hover
+			background: #557E83
+			color: #fff
+			border-radius: 50px
+			transition: background-color .5s, height 2s;
+
+	@media screen and (max-width: $break-midle)
+		display: none

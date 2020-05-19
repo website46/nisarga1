@@ -1,0 +1,127 @@
+$break-small: 764px
+$break-midle: 1140px
+
+#review-page
+	background: #F8F3E7
+	background-image: url('../img/fon-reviews.png')
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+
+	.secondary-menu
+		li
+			&:last-child
+				background: transparent
+				border: 1px solid #95493C
+				color: #95493C
+				border-radius: 50px
+
+				&:hover
+					background: #95493C
+					color: #fff
+
+#reviews_section 
+	margin: 3em 0 5em 0
+
+	article
+		margin: 7em 0
+
+		&:nth-child(2n+1)
+			flex-direction: row-reverse
+			display: flex
+			flex-wrap: wrap
+
+			.review_img
+				flex-direction: row-reverse
+
+				img
+					margin-right: auto
+
+			div
+				span
+					display: block
+					text-align: left
+
+			h3
+				text-align: left
+
+		.one-half
+			padding: 20px
+
+	h3
+		font-family: 'Rozoviy Chulok'
+		width: 240px
+		color: #95493C
+		font-size: 4em
+		line-height: 1em
+		font-weight: 400
+		text-align: right
+		margin-bottom: 20px
+		word-spacing: 20px
+
+	.review_img
+		display: flex
+		justify-content: space-between
+		
+		@media screen and (max-width: $break-midle)
+			flex-wrap: wrap
+
+		img
+			margin-left: auto
+
+		div
+			span
+				display: block
+				text-align: right
+				font-size: 1.1em
+				margin-bottom: 10px
+
+		.review_foto
+			position: relative
+			div
+				position: relative
+				width: 320px
+				max-width: 100%
+				padding: 5px
+
+				&::after
+					position: absolute
+					bottom: 0
+					z-index: 0
+					content: ''
+					display: block
+					width: calc(100% - 10px)
+					height: 100%
+					background-image: url("data:image/svg+xml;utf8,<svg width='440px' height='440px' xmlns='http://www.w3.org/2000/svg'><circle cx='220px' cy='220px' r='220px' width='440px' height='440px' fill='none' stroke='%23557E83' stroke-width='1' stroke-dasharray='10 7'/></svg>")
+					background-repeat: no-repeat
+					background-position: center center
+					background-size: 100%
+					animation: spin 32s infinite linear
+					@keyframes spin
+						100%
+							transform: rotate(360deg)
+
+				img
+					position: relative
+					display: block
+					z-index: 1
+					margin: 20px
+					max-width: calc(100% - 40px)
+					transition: transform .5s
+
+					&:hover
+						transform: scale(1.05)
+
+	.review_text
+		p
+			display: inline
+			margin: 0
+			line-height: 1.8em
+
+		a
+			text-decoration: none
+			color: #95493C
+			font-style: italic
+
+			&:hover
+				text-decoration: underline

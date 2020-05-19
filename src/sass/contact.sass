@@ -1,0 +1,67 @@
+$break-small: 764px
+$break-midle: 1140px
+
+#contacts-page
+	background: #F8F3E7
+	background-image: url('../img/fon-contacts.png')
+	background-size: cover
+	background-position: top center
+
+	.secondary-menu
+		li
+			&:last-child
+				background: transparent
+				border: 1px solid #95493C
+				color: #95493C
+				border-radius: 50px
+
+				&:hover
+					background: #95493C
+					color: #fff
+
+#contacts_section 
+	margin: 3em 0 5em 0
+
+	article
+		margin: 1em 0
+
+		&:nth-child(2n+1)
+			flex-direction: row-reverse
+			display: flex
+			flex-wrap: wrap
+
+			.review_img
+				flex-direction: row-reverse
+
+				img
+					margin-right: auto
+
+			div
+				span
+					display: block
+					text-align: left
+
+			h3
+				text-align: left
+
+		.one-half
+			padding: 20px
+
+	h3
+		font-family: 'Rozoviy Chulok'
+		width: 240px
+		color: #95493C
+		font-size: 4em
+		line-height: 1em
+		font-weight: 400
+		text-align: right
+		margin-bottom: 20px
+		word-spacing: 20px
+
+	.contact_table
+		div
+			width: 100%
+			text-align: center
+
+			img
+				display: inline-block

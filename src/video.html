@@ -1,11 +1,265 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="video-page">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/modern-css-reset/reset.min.css">
+	<link rel="stylesheet" href="libs/skeleton/skeleton.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Видео | Нисарга</title>
+	<meta name="description" content="Описание страницы">
 </head>
 <body>
-    
+<nav id="page_menu" class="menu">
+	<div class="logo_menu">
+		<a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a>
+	</div>
+	<div class="social_menu">
+		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/facebook-w.svg" alt="facebook">
+		</a>
+		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/instagram-w.svg" alt="instagram">
+		</a>
+		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+		</a>
+		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/youtube-w.svg" alt="youtube">
+		</a>
+	</div>
+	<label for="navbar-checkbox" class="navbar-handle">
+		<div class="burger"></div>
+	</label>
+	<input type="checkbox" id="navbar-checkbox" class="mobile-menu-checkbox">	
+	<ul>
+		<li class="logo-menu"><a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a></li>
+		<li><a href="/events.html">Мероприятия</a></li>
+		<li class="active-menu"><a href="/video.html">Видео</a></li>
+		<li><a href="/about.html">О центре</a></li>
+		<li><a href="/reviews.html">Отзывы</a></li>
+		<li><a href="/contacts.html">Контакты</a></li>
+	</ul>
+</nav>
+
+<main class="container">
+	<section id="video_page_section">
+		<article class="row">
+			<h4><span>Новое</span></h4>
+			<div class="new_video">
+				<img src="img/video.png" alt="Видео">
+				<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+			</div>
+			<div class="new_video_info">
+				<span class="new_video_title">“Золотая жизнь”</span>
+				<span>Сатсанг в Минске.</span> <span>2019.04.28</span>
+			</div>
+			<img src="img/youtube.png" class="youtube-img" alt="Ссылки на канал">
+		</article>
+
+		<article class="row">
+			<h4><span>Популярное</span></h4>
+		</article>
+		<article class="row">
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video1.png" alt="Видео1">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Встреча с группой Дмитрия Михайлова в Тируваннамалае.</span>
+					<span>Ритрит в Индии.</span> <span>2020.02.12</span>
+				</div>
+			</div>
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video2.png" alt="Видео2">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Интервью с Анаром Абасовым. </span>
+					<span>Интервью с основателем youtube-канала "Встречи СЫРОЕДОВ, ПРАНОЕДОВ И НЕ ТОЛЬКО!"Анаром Абасовым.</span> <span>2020.03.15.</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video3.png" alt="Видео3">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Встреча с группой Дмитрия Михайлова в Тируваннамалае.</span>
+					<span>Ритрит в Индии.</span> <span>2020.02.12</span>
+				</div>
+			</div>
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video4.png" alt="Видео4">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Интервью с Анаром Абасовым. </span>
+					<span>Интервью с основателем youtube-канала "Встречи СЫРОЕДОВ, ПРАНОЕДОВ И НЕ ТОЛЬКО!"Анаром Абасовым.</span> <span>2020.03.15.</span>
+				</div>
+			</div>
+		</article>
+
+		<div class="button_block">
+			<button>Загрузить ещё</button>
+		</div>
+
+		<article class="row">
+			<h4><span>Все видео</span></h4>
+			<ul class="secondary-menu">
+				<li>2020</li>
+				<li>2019</li>
+				<li>2018</li>
+				<li>2017</li>
+				<li>2016</li>
+				<li>2015</li>
+				<li>2014</li>
+				<li>2013</li>
+			</ul>
+		</article>
+
+		<article class="row">
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video1.png" alt="Видео1">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Встреча с группой Дмитрия Михайлова в Тируваннамалае.</span>
+					<span>Ритрит в Индии.</span> <span>2020.02.12</span>
+				</div>
+			</div>
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video2.png" alt="Видео2">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Интервью с Анаром Абасовым. </span>
+					<span>Интервью с основателем youtube-канала "Встречи СЫРОЕДОВ, ПРАНОЕДОВ И НЕ ТОЛЬКО!"Анаром Абасовым.</span> <span>2020.03.15.</span>
+				</div>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video3.png" alt="Видео3">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Встреча с группой Дмитрия Михайлова в Тируваннамалае.</span>
+					<span>Ритрит в Индии.</span> <span>2020.02.12</span>
+				</div>
+			</div>
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video4.png" alt="Видео4">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Интервью с Анаром Абасовым. </span>
+					<span>Интервью с основателем youtube-канала "Встречи СЫРОЕДОВ, ПРАНОЕДОВ И НЕ ТОЛЬКО!"Анаром Абасовым.</span> <span>2020.03.15.</span>
+				</div>
+			</div>
+		</article>
+
+		<div class="button_block">
+			<button>Загрузить ещё</button>
+		</div>
+
+		<article class="row">
+			<h4><span>Искать фрагмент по тегам</span></h4>
+			<img src="img/tags.png" alt="Теги">
+			<h4><span>Фрагмент по тегу "жизнь"</span></h4>
+		</article>
+
+		<article class="row">
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video1.png" alt="Видео1">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Встреча с группой Дмитрия Михайлова в Тируваннамалае.</span>
+					<span>Ритрит в Индии.</span> <span>2020.02.12</span>
+				</div>
+			</div>
+			<div class="one-half column item_video">
+				<div class="item_video_img">
+					<img src="img/video/video2.png" alt="Видео2">
+					<img src="img/icons/play_video.svg" class="play_video_button" alt="play">
+				</div>
+				<div class="item_video_info">
+					<span class="item_video_title">Юрий Менячихин. Интервью с Анаром Абасовым. </span>
+					<span>Интервью с основателем youtube-канала "Встречи СЫРОЕДОВ, ПРАНОЕДОВ И НЕ ТОЛЬКО!"Анаром Абасовым.</span> <span>2020.03.15.</span>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section id="library_section">
+		<h3>Изучайте нашу библиотеку</h3>
+		<p>Подборка из авторов и их произведений, фильмов, картин и других материалов от Юрия Менячихина и регулярные новости о наших мероприятиях </p>
+		<form>
+			<input type="text" class="left_input" required="" placeholder="Имя"><input type="email" class="right_input" required="" placeholder="E-mail">
+			<input type="text" class="left_input" required="" placeholder="Выберите страну"><input type="text" class="right_input" required="" placeholder="Выберите город">
+			<div class="politics_input_block">
+				<input type="checkbox" class="politics_input" onclick="check();" value="" autocomplete="on" checked><span>Я согласен с политикой конфиденциальности</span>
+			</div>
+		</form>
+		<div class="button_block">
+			<button>Получить на почту</button>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="container">   
+		<div class="one-half column column-l">
+			<blockquote>Реальному ничто не угрожает.<br>Нереального не существует</blockquote>
+			<p>Введение в Курс чудес</p>
+			<div class="social_footer">
+				<span>Будьте с нами</span>
+				<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/facebook-w.svg" alt="facebook">
+				</a>
+				<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/instagram-w.svg" alt="instagram">
+				</a>
+				<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+				</a>
+				<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/youtube-w.svg" alt="youtube">
+				</a>
+			</div>
+			<div class="footer_link">
+				<div><a href="#">Подписаться на новости</a></div>
+				<div><a href="#">Предложить мероприятие в вашем городе</a></div>
+			</div>
+		</div>
+		<div class="one-half column column-r">
+			<div class="footer_logo">
+				<img src="img/logo-w.svg" alt="Логотип">
+				<a href="mailto:namaste@nisarga.center" title="Отправить E-mail">namaste@nisarga.center</a>
+			</div>
+			<div class="footer_info">
+				<a href="#">Политика Конфиденциальности</a>
+				<p>Разработано с ♥ в <a href="https://cooldigital.ru/" onclick="return !window.open(this.href)">МГ Свежак</a></p>
+			</div>
+		</div>
+	</div>
+	<a id="donate" href="/donate.html"><img src="img/icons/donate.svg" alt="Поблагодарить"> <span>Поблагодарить</span></a>
+</footer>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>

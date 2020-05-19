@@ -1,11 +1,199 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="formpage-page">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/modern-css-reset/reset.min.css">
+	<link rel="stylesheet" href="libs/skeleton/skeleton.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Заполнить анкету | Нисарга</title>
+	<meta name="description" content="Описание страницы">
 </head>
 <body>
-    
+<nav id="page_menu" class="menu">
+	<div class="logo_menu">
+		<a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a>
+	</div>
+	<div class="social_menu">
+		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/facebook-w.svg" alt="facebook">
+		</a>
+		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/instagram-w.svg" alt="instagram">
+		</a>
+		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+		</a>
+		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/youtube-w.svg" alt="youtube">
+		</a>
+	</div>
+	<label for="navbar-checkbox" class="navbar-handle">
+		<div class="burger"></div>
+	</label>
+	<input type="checkbox" id="navbar-checkbox" class="mobile-menu-checkbox">	
+	<ul>
+		<li class="logo-menu"><a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a></li>
+		<li><a href="/events.html">Мероприятия</a></li>
+		<li><a href="/video.html">Видео</a></li>
+		<li><a href="/about.html">О центре</a></li>
+		<li><a href="/reviews.html">Отзывы</a></li>
+		<li><a href="/contacts.html">Контакты</a></li>
+	</ul>
+</nav>
+
+<main class="container">
+	<section id="events_menu">
+		<ul class="secondary-menu">
+			<li>Все</li>
+			<li>Беседы</li>
+			<li>Ритриты</li>
+			<li>Тренинги</li>
+			<li>Другое</li>
+		</ul>
+	</section>
+
+	<section id="formpage_section">
+		<article class="row">
+			<div class="one-half column formpage_info">
+				<h3>«Атма Вичара»<br>ритрит</h3>
+				<span class="formpage_date">1-7 мая 2020</span>
+				<span class="formpage_city">Ярославль</span>
+			</div>
+			<div class="one-half column">
+				<img src="img/org.png" alt="Временный файл">
+			</div>
+		</article>
+		<article class="row">
+			<div class="eventpage_info">
+				<p><span>Участников:</span> 44 (осталось мест 12)</p>
+				<p><span>Место проведения:</span> ритритно-тренинговый центр "Папин дом"</p>
+				<p><span>Стоимость:</span> 600 usd</p>
+				<p><span>Предоплата:</span> 100 usd (предоплата не возвращается)</p>
+			</div>
+		</article>
+		<hr>
+	</section>
+
+	<section id="formpage_section_2">
+		<article class="row drag-and-drop">
+			<div class="one-half column">
+				<p>Перед заполнением анкеты внимательно ознакомьтесь с<br><a>правилами участия</a></p>
+			</div>
+			<div class="one-half column">
+				<img src="img/zagr.png" alt="Временный файл">
+			</div>
+		</article>
+		<hr>
+
+		<article class="row">
+			<div class="one-half column">
+				<form>
+					<input type="text" class="left_input" required="" placeholder="Фамилия / Имя / Отчество">
+					<input type="text" class="right_input" required="" placeholder="Страна">
+					<input type="text" class="left_input" required="" placeholder="Контактный телефон">
+					<input type="text" class="right_input" required="" placeholder="Адрес в Фейсбуке или Вконтакте">
+				</form>
+			</div>
+			<div class="one-half column">
+				<form>
+					<input type="text" class="left_input" required="" placeholder="Фамилия и Имя латинскими буквами">
+					<input type="text" class="right_input" required="" placeholder="Город проживания">
+					<input type="email" class="left_input" required="" placeholder="E-mail">
+					<input type="text" class="right_input" required="" placeholder="Дата рождения">
+				</form>
+			</div>
+		</article>
+		<hr>
+		<article class="row">
+			<form>
+				<input type="text" class="left_input" required="" placeholder="Предыдущий опыт практики / участия в семинарах">
+				<input type="email" class="right_input" required="" placeholder="Что хотите получить от участия в этом мероприятии?">
+				<input type="text" class="left_input" required="" placeholder="Общее состояние здоровья, ограничения в диете">
+				<input type="text" class="right_input" required="" placeholder="Из какого источника вы узнали о тренинге?">
+			</form>
+			<h6>Заполнили все поля?</h6>
+			<p>Нажмите «Отправить анкету» и наш организатор свяжется с вами в ближайщее время</p>
+		</article>
+		<article class="row form_button_block">
+			<div class="button_block">
+				<button>Отправить анкету</button>
+			</div>
+			<div>
+				<p>Отправляя анкету, вы автоматически соглашаетесь с<br> <a>правилами обработки персональных данных</a>
+				</p>
+			</div>
+		</article>
+	</section>
+
+	<section id="follow_section">
+		<article class="row">
+			<h3>Будьте с нами</h3>
+		</article>
+		<article class="row">
+			<div class="one-half column">
+				<p>Все активности, анонсы мероприятий, подробности,<br>общение и новые материалы - в наших соцсетях.<br>Присоединяйтесь!</p>
+			</div>
+			<div class="one-half column">
+				<div class="social_follow">
+					<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+						<img src="img/icons/facebook.svg" alt="facebook">
+					</a>
+					<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+						<img src="img/icons/instagram.svg" alt="instagram">
+					</a>
+					<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+						<img src="img/icons/vkontakte.svg" alt="vkontakte">
+					</a>
+					<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+						<img src="img/icons/youtube.svg" alt="youtube">
+					</a>
+				</div>
+			</div>
+		</article>
+	</section>
+</main>
+
+<footer>
+	<div class="container">
+		<div class="one-half column column-l">
+			<blockquote>Реальному ничто не угрожает.<br>Нереального не существует</blockquote>
+			<p>Введение в Курс чудес</p>
+			<div class="social_footer">
+				<span>Будьте с нами</span>
+				<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/facebook-w.svg" alt="facebook">
+				</a>
+				<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/instagram-w.svg" alt="instagram">
+				</a>
+				<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+				</a>
+				<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/youtube-w.svg" alt="youtube">
+				</a>
+			</div>
+			<div class="footer_link">
+				<div><a href="#">Подписаться на новости</a></div>
+				<div><a href="#">Предложить мероприятие в вашем городе</a></div>
+			</div>
+		</div>
+		<div class="one-half column column-r">
+			<div class="footer_logo">
+				<img src="img/logo-w.svg" alt="Логотип">
+				<a href="mailto:namaste@nisarga.center" title="Отправить E-mail">namaste@nisarga.center</a>
+			</div>
+			<div class="footer_info">
+				<a href="#">Политика Конфиденциальности</a>
+				<p>Разработано с ♥ в <a href="https://cooldigital.ru/" onclick="return !window.open(this.href)">МГ Свежак</a></p>
+			</div>
+		</div>
+	</div>
+	<a id="donate" href="/donate.html"><img src="img/icons/donate.svg" alt="Поблагодарить"> <span>Поблагодарить</span></a>
+</footer>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>

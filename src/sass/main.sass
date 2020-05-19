@@ -5,11 +5,18 @@ $break-midle: 1140px
 @import "src/sass/menu.sass"
 @import "src/sass/button.sass"
 @import "src/sass/events.sass"
+@import "src/sass/event.sass"
 @import "src/sass/video.sass"
+@import "src/sass/reviews.sass"
+@import "src/sass/404.sass"
+@import "src/sass/contact.sass"
+@import "src/sass/about.sass"
+@import "src/sass/form.sass"
+@import "src/sass/donate.sass"
 
 html
 	background: #F8F3E7
-	background-image: url('/img/fon0.png')
+	background-image: url('../img/fon-home.png')
 	background-size: 100%
 	background-position: top left
 
@@ -17,7 +24,7 @@ body
 	font-family: 'Fira Sans'
 	font-size: 16px
 	color: #65746E
-	background-image: url('/img/line-fon.svg'), url('/img/fon1.png')
+	background-image: url('../img/line-fon.svg'), url('../img/fon1.png')
 	background-size: cover, auto
 	background-attachment: fixed
 	overflow-x: hidden
@@ -35,7 +42,7 @@ blockquote
 #top_block 
 	text-align: center
 	text-transform: uppercase
-	background-image: url('/img/fonbl1.png')
+	background-image: url('../img/fonbl1.png')
 	background-size: 95%
 	background-position: center center;
 	color: #4D5E58
@@ -51,17 +58,15 @@ blockquote
 		display: inline-block
 		padding: 5px
 
-		svg
+		img
 			width: 30px
-			height: 30px
+			transition: transform .1s
+			&:hover
+				transform: scale(1.2)
+				transition: transform .1s
 
-#facebook-dark, #instagram-dark, #vkontakte-dark, #youtube-dark
-	.vector
-		fill: #fff
-	.path
-		fill: #65746E
-		&:hover
-			fill: #F3C5A3
+	@media screen and (max-width: $break-small)
+		display: none
 
 .like_top
 	text-align: right
@@ -107,6 +112,8 @@ blockquote
 		color: #95493C
 		font-size: 4em
 		font-weight: 400
+		word-spacing: 20px
+		line-height: 1em
 
 	p
 		display: block
@@ -160,9 +167,107 @@ blockquote
 			span
 				vertical-align: middle
 
+/*Follow*/
+#follow_section
+	margin: 2em 0 4em 0
+	h3
+		font-family: 'Rozoviy Chulok'
+		color: #95493C
+		font-size: 4em
+		font-weight: 400
+		word-spacing: 20px
+		line-height: 1em
+
+	div
+		text-align: center
+
+		p
+			text-align: left
+			text-transform: uppercase
+
+	.social_follow
+		margin: 10px 0
+
+		a
+			display: inline-block
+			padding: 5px
+			vertical-align: middle
+
+			&:before
+				display: none
+
+		img
+			transition: transform .1s
+			width: 45px
+			&:hover
+				transform: scale(1.2)
+				transition: transform .1s
+
+
+/*New Review*/
+#new_review 
+	h3
+		font-family: 'Rozoviy Chulok'
+		color: #95493C
+		font-size: 4em
+		font-weight: 400
+		text-align: center
+		word-spacing: 20px
+
+	form
+		text-align: center
+
+		input
+			width: 100%
+			min-width: 280px
+			padding: 25px 30px
+			color: #65746E
+			border-width: 2px 2px 2px 2px
+			border-radius: 100px
+			border-style: solid
+			border-color: #ccc
+
+		textarea
+			width: 100%
+			min-width: 280px
+			min-height: 200px
+			padding: 25px 30px
+			color: #65746E
+			border-width: 2px 2px 2px 2px
+			border-radius: 30px
+			border-style: solid
+			border-color: #ccc
+
+		.politics_input_block
+			text-align: right
+			margin: 0 auto
+			padding: 0 5px
+
+			input[type="checkbox"] 
+				width: auto
+				min-width: auto
+				margin-right: 7px
+				margin-bottom: 3px
+				vertical-align: middle
+
+			span
+				vertical-align: middle
+
+
+/*Foto section*/
+#foto_section
+	h3
+		font-family: 'Rozoviy Chulok'
+		color: #95493C
+		font-size: 4em
+		font-weight: 400
+		text-align: center
+		word-spacing: 20px
+
+
 /*Footer*/
 footer 
-	background: url('/img/footer-fon.png')
+	background: url('../img/footer-fon.png')
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center center
@@ -226,9 +331,11 @@ footer blockquote
 
 .footer_logo
 	text-align: right
+	margin-left: auto
 
 	@media screen and (max-width: $break-small)
 		text-align: center
+		margin-right: auto
 
 	img
 		margin-left: auto
@@ -238,9 +345,11 @@ footer blockquote
 
 .footer_info
 	text-align: right
+	margin-left: auto
 
 	@media screen and (max-width: $break-small)
 		text-align: center
+		margin-right: auto
 
 	p
 		margin: 0
@@ -253,12 +362,14 @@ footer blockquote
 		padding: 5px
 		vertical-align: middle
 
-		svg
-			width: 30px
-			height: 30px
-
 		&:before
 			display: none
+
+	img
+		transition: transform .1s
+		&:hover
+			transform: scale(1.2)
+			transition: transform .1s
 
 	span
 		display: inline-block
@@ -269,15 +380,6 @@ footer blockquote
 		@media screen and (max-width: $break-midle)
 			display: block
 			padding: 0
-
-#facebook-light, #instagram-light, #vkontakte-light, #youtube-light
-	.vector
-		fill: #00455d
-
-	.path
-		fill: #fff
-		&:hover
-			fill: #F3C5A3
 
 #donate
 	position: fixed
@@ -298,13 +400,12 @@ footer blockquote
 		margin-right: -20px
 		padding: 10px 5px 40px 10px
 
-	svg
+	img
 		width: 40px
 		height: 40px;
 		display: none
 		vertical-align: middle
 		margin-right: 5px
-		fill: #fff
 		transition: .5s
 
 		@media screen and (max-width: $break-small)

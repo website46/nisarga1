@@ -1,11 +1,325 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" id="review-page">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/modern-css-reset/reset.min.css">
+	<link rel="stylesheet" href="libs/skeleton/skeleton.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Отзывы | Нисарга</title>
+	<meta name="description" content="Описание страницы">
 </head>
 <body>
-    
+<nav id="page_menu" class="menu">
+	<div class="logo_menu">
+		<a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a>
+	</div>
+	<div class="social_menu">
+		<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/facebook-w.svg" alt="facebook">
+		</a>
+		<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/instagram-w.svg" alt="instagram">
+		</a>
+		<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+		</a>
+		<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+			<img src="img/icons/youtube-w.svg" alt="youtube">
+		</a>
+	</div>
+	<label for="navbar-checkbox" class="navbar-handle">
+		<div class="burger"></div>
+	</label>
+	<input type="checkbox" id="navbar-checkbox" class="mobile-menu-checkbox">	
+	<ul>
+		<li class="logo-menu"><a href="/index.html"><img src="img/logo-menu.svg" alt="Логотип"></a></li>
+		<li><a href="/events.html">Мероприятия</a></li>
+		<li><a href="/video.html">Видео</a></li>
+		<li><a href="/about.html">О центре</a></li>
+		<li class="active-menu"><a href="/reviews.html">Отзывы</a></li>
+		<li><a href="/contacts.html">Контакты</a></li>
+	</ul>
+</nav>
+
+<main class="container">
+	<section id="reviews_section">
+		<ul class="secondary-menu">
+			<li>Все отзывы</li>
+			<li>О беседах</li>
+			<li>О ритритах</li>
+			<li>О тренингах</li>
+			<li>Другое</li>
+			<li>Написать отзыв</li>
+		</ul>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review1.png" alt="Рената">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Рената</h3>
+					<span>2017-08-21</span>
+					<span>Карелия</span>
+					<span>Ритрит<br>Атма Вичара</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Любые слова об этом видятся лишними, неуместными, неподходящими, но говорить об этом радостно. Все поступки, все действия, вся жизнь сводятся к этому. Видится так, что любые слова только подтверждают игру и уводят от истины.  Как я ни старалась писать об этом, подбирая «точные слова», но всё равно в словах обесценивается красота. Письмо кажется пафосным и раздутым. К Любые слова об этом видятся лишними, неуместными, неподходящими, но говорить об этом радостно. Все поступки, все действия, вся жизнь сводятся к этому. Видится так, что любые слова только подтверждают игру и уводят от истины.  Как я ни старалась писать об этом, подбирая «точные слова», но всё равно в словах обесценивается красота. Письмо кажется пафосным и раздутым. К...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review2.png" alt="Андрей">
+					</div>
+				</div>				
+				<div class="review_info">
+					<h3>Андрей</h3>
+					<span>2019-11-02</span>
+					<span>Москва</span>
+					<span>География<br>меня</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Жил-был...., страдал, мучился, не понимал почему я не могу справиться со своими проблемами, обвинял себя и весь мир. Пока терпение не переполнило меня и жизнь стала разваливаться по всем направлениям. И вот на пике этого кризиса моя любимая женщина прошла тренинг "Зеркало подсознания" и вернулась другим человеком, с другими глазами, с другими чувствами, светлая, легкая. Жил-был...., страдал, мучился, не понимал почему я не могу справиться со своими проблемами, обвинял себя и весь мир. Пока терпение не переполнило меня и жизнь стала разваливаться по всем направлениям. И вот на пике этого кризиса моя любимая женщина прошла тренинг "Зеркало подсознания" и вернулась другим человеком, с другими глазами, с другими чувствами, светлая, легкая...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review3.png" alt="Игорь">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Игорь</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Я: Но как преодолеть страх? Юра: Твоему сердцу ничего не угрожает. Никто не может с ним ничего сделать. Оно вечное. Вечер третьего дня. Микрофон идёт по кругу и каждый участник делится своим переживанием тренинга. И я ловлю себя на том что каждый из них хорошо, красиво и точно описывает то, что происходило и со мной. За эти три дня благодаря тончайшей работе команды тренер. Я: Но как преодолеть страх? Юра: Твоему сердцу ничего не угрожает. Никто не может с ним ничего сделать. Оно вечное. Вечер третьего дня. Микрофон идёт по кругу и каждый участник делится своим переживанием тренинга. И я ловлю себя на том что каждый из них хорошо, красиво и точно описывает то, что происходило и со мной. За эти три дня благодаря тончайшей работе команды тренер...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review4.png" alt="Данила">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Данила</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Я: Но как преодолеть страх? Юра: Твоему сердцу ничего не угрожает. Никто не может с ним ничего сделать. Оно вечное. Вечер третьего дня. Микрофон идёт по кругу и каждый участник делится своим переживанием тренинга. И я ловлю себя на том что каждый из них хорошо, красиво и точно описывает то, что происходило и со мной. За эти три дня благодаря тончайшей работе команды тренеров. Я: Но как преодолеть страх? Юра: Твоему сердцу ничего не угрожает. Никто не может с ним ничего сделать. Оно вечное. Вечер третьего дня. Микрофон идёт по кругу и каждый участник делится своим переживанием тренинга. И я ловлю себя на том что каждый из них хорошо, красиво и точно описывает то, что происходило и со мной. За эти три дня благодаря тончайшей работе команды тренеров...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review5.png" alt="Светлана">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Светлана</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Зеркало оказалось очень честным. Не всегда его отражение было приятным, а иногда и шокирующим, но работа Мастера, атмосфера, которую создавала работа великолепной команды и наши собственные энергии, исцеляющие техники и практики помогли изменить свой взгляд на мир и на себя в нём. Думаю, действие всего пережитого и прочувствованного за эти три дня будет еще разворачивается во вре. Зеркало оказалось очень честным. Не всегда его отражение было приятным, а иногда и шокирующим, но работа Мастера, атмосфера, которую создавала работа великолепной команды и наши собственные энергии, исцеляющие техники и практики помогли изменить свой взгляд на мир и на себя в нём. Думаю, действие всего пережитого и прочувствованного за эти три дня будет еще разворачивается во вре...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review6.png" alt="Кристина">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Кристина</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Это невозможно выразить словами, насколько я благодарна Юре за это волшебное мое преображение. Несколько лет я пыталась справиться со своей болью самостоятельно, но получалось ее только размазать. Юра с огромной заботой, любовью и знанием подвёл лицом к лицу к моей боли и показал мне, что я больше и сильнее нее. А ещё атмосфера всех окружающих людей и папиного дома, дали огр. Это невозможно выразить словами, насколько я благодарна Юре за это волшебное мое преображение. Несколько лет я пыталась справиться со своей болью самостоятельно, но получалось ее только размазать. Юра с огромной заботой, любовью и знанием подвёл лицом к лицу к моей боли и показал мне, что я больше и сильнее нее. А ещё атмосфера всех окружающих людей и папиного дома, дали огр...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review7.png" alt="Ирина">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Ирина</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Если вы прошли много тренингов, но все еще спрашиваете себя - что вообще происходит в этом мире?; если боль продолжает разрывать вас на части; если вы так и не знаете, что вам делать прямо сейчас, чтобы стать счастливым - вам сюда! Папин дом - чудо. Когда я прочитала в сообщении организатора “обстановка - как дома”, я подумала, что это такой афоризм. Но реальность превзошла в. Если вы прошли много тренингов, но все еще спрашиваете себя - что вообще происходит в этом мире?; если боль продолжает разрывать вас на части; если вы так и не знаете, что вам делать прямо сейчас, чтобы стать счастливым - вам сюда! Папин дом - чудо. Когда я прочитала в сообщении организатора “обстановка - как дома”, я подумала, что это такой афоризм. Но реальность превзошла в...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review8.png" alt="Наталья">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Наталья</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Интуиция снова не подвела. “Зеркало подсознания”. Первое, что видишь, - ”Папин дом” - удивительное пространство, где попадаешь в теплые тапочки и каждый квадратный метр, наполненный любовью. И тут ты: больной измученный страдалец, бездомный котенок, не помня как выбравшийся из-под несущегося огромного локомотива, голодный, холодный, жизнь - боль, все вокруг беспрестанно . Интуиция снова не подвела. “Зеркало подсознания”. Первое, что видишь, - ”Папин дом” - удивительное пространство, где попадаешь в теплые тапочки и каждый квадратный метр, наполненный любовью. И тут ты: больной измученный страдалец, бездомный котенок, не помня как выбравшийся из-под несущегося огромного локомотива, голодный, холодный, жизнь - боль, все вокруг беспрестанно ...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<article class="row">
+			<div class="one-half column review_img">
+				<div class="review_foto">
+					<div>
+						<img src="img/reviews/review9.png" alt="Светлана">
+					</div>
+				</div>
+				<div class="review_info">
+					<h3>Светлана</h3>
+					<span>2019-10-25</span>
+					<span>Ярославль</span>
+					<span>Зеркало<br>подсознания</span>
+				</div>
+			</div>
+			<div class="one-half column review_text">
+				<p>Огромная благодарность организаторам, всем участникам, пространству ”Папин дом” и низкий поклон Юрию Менячихину за помощь в продолжающейся трансформации и узнавании Себя. Море разнообразных практик, смеха, слез, криков боли, волнений, переживаний, открытости, любви и единства! И прекрасное окончание тренинга интуитивной игрой на различных музыкальных. Огромная благодарность организаторам, всем участникам, пространству ”Папин дом” и низкий поклон Юрию Менячихину за помощь в продолжающейся трансформации и узнавании Себя. Море разнообразных практик, смеха, слез, криков боли, волнений, переживаний, открытости, любви и единства! И прекрасное окончание тренинга интуитивной игрой на различных музыкальных...</p>
+				<a href="#">ещё</a>
+			</div>
+		</article>
+
+		<div class="button_block">
+			<button>Загрузить ещё</button>
+		</div>
+	</section>
+
+	<section id="new_review">
+		<h3>Оставьте отзыв</h3>
+		<form>
+			<input type="text" class="left_input" required="" placeholder="Имя">
+			<input type="email" class="right_input" required="" placeholder="E-mail">
+			<input type="text" class="left_input" required="" placeholder="Выберите мероприятие">
+			<textarea name="text"  required="" placeholder="Отзыв"></textarea>
+			<div class="politics_input_block">
+				<input type="checkbox" class="politics_input" onclick="check();" value="" autocomplete="on" checked><span>Я согласен с политикой конфиденциальности</span>
+			</div>
+		</form>
+		<div class="button_block">
+			<button>Отправить</button>
+		</div>
+	</section>
+</main>
+
+<section id="foto_section">
+	<h3>Фотографии с предыдущих мероприятий</h3>
+	<img src="img/foto.png" alt="Фотографии">
+</section>
+
+<main class="container">
+	<div class="button_block">
+		<button>Загрузить ещё</button>
+	</div>
+	<section id="library_section">
+		<h3>Изучайте нашу библиотеку</h3>
+		<p>Подборка из авторов и их произведений, фильмов, картин и других материалов от Юрия Менячихина и регулярные новости о наших мероприятиях </p>
+		<form>
+			<input type="text" class="left_input" required="" placeholder="Имя"><input type="email" class="right_input" required="" placeholder="E-mail">
+			<input type="text" class="left_input" required="" placeholder="Выберите страну"><input type="text" class="right_input" required="" placeholder="Выберите город">
+			<div class="politics_input_block">
+				<input type="checkbox" class="politics_input" onclick="check();" value="" autocomplete="on" checked><span>Я согласен с политикой конфиденциальности</span>
+			</div>
+		</form>
+		<div class="button_block">
+			<button>Получить на почту</button>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="container">
+		<div class="one-half column column-l">
+			<blockquote>Реальному ничто не угрожает.<br>Нереального не существует</blockquote>
+			<p>Введение в Курс чудес</p>
+			<div class="social_footer">
+				<span>Будьте с нами</span>
+				<a href="https://www.facebook.com/groups/nisarga.center/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/facebook-w.svg" alt="facebook">
+				</a>
+				<a href="https://www.instagram.com/cs_nisarga/" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/instagram-w.svg" alt="instagram">
+				</a>
+				<a href="https://vk.com/nisarga" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/vkontakte-w.svg" alt="vkontakte">
+				</a>
+				<a href="https://www.youtube.com/channel/UCau6mdLbcOZgmzv6L-ETUSw" onclick="return !window.open(this.href)" rel="nofollow">
+					<img src="img/icons/youtube-w.svg" alt="/youtube">
+				</a>
+			</div>
+			<div class="footer_link">
+				<div><a href="#">Подписаться на новости</a></div>
+				<div><a href="#">Предложить мероприятие в вашем городе</a></div>
+			</div>
+		</div>
+		<div class="one-half column column-r">
+			<div class="footer_logo">
+				<img src="img/logo-w.svg" alt="Логотип">
+				<a href="mailto:namaste@nisarga.center" title="Отправить E-mail">namaste@nisarga.center</a>
+			</div>
+			<div class="footer_info">
+				<a href="#">Политика Конфиденциальности</a>
+				<p>Разработано с ♥ в <a href="https://cooldigital.ru/" onclick="return !window.open(this.href)">МГ Свежак</a></p>
+			</div>
+		</div>
+	</div>
+	<a id="donate" href="/donate.html"><img src="img/icons/donate.svg" alt="Поблагодарить"> <span>Поблагодарить</span></a>
+</footer>
+
+<script src="js/common.js"></script>
+
 </body>
 </html>
